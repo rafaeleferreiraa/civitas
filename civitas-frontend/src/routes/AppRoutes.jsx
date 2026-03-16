@@ -4,6 +4,8 @@ import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
 import PrivateRoute from "./PrivateRoute";
 import Home from "../pages/Home";
+import PublicHome from "../pages/PublicHome";
+
 
 function AppRoutes() {
   return (
@@ -11,6 +13,7 @@ function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/inicio" element={<PublicHome />} />
 
       <Route
         path="/dashboard"
